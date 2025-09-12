@@ -1,0 +1,466 @@
+/* body */
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* menu nav */
+.menu_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px;
+  padding: 5px;
+  border-bottom: 2px solid #3e0983;
+  z-index: 1;
+}
+.log img {
+  width: 80px;
+  border-radius: 15px;
+}
+.logo_usuario {
+  position: absolute;
+  right: 25px;
+}
+.logo_usuario img {
+  width: 30px;
+  cursor: pointer;
+}
+.btn_consultar_ingreso {
+  position: absolute;
+  right: 100px;
+  margin-top: 1px;
+  display: flex;
+}
+/* dropdow de consultar ingresso */
+.btn_consultar_ingreso button {
+  width: 220px;
+  height: 30px;
+  border-radius: 20px;
+  border: 1.5px solid #e8323f;
+  background-color: #fff;
+  color: #3e0983;
+  cursor: pointer;
+}
+.dropdaw_ingresso {
+  border: 1.5px solid #3e0983;
+  width: 200px;
+  border-radius: 10px;
+  height: 100px;
+  right: 100px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.44);
+  z-index: 1;
+}
+.dropdaw_ingresso.ativo {
+  display: block;
+}
+.dropdaw_ingresso form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1px;
+  width: 100%;
+}
+.dropdaw_ingresso form label {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.dropdaw_ingresso form input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 5px;
+  height: 20px;
+}
+.btn_consultar {
+  width: 100%;
+  height: 24px;
+  margin-top: 13px;
+}
+.btn_consultar button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #e8323f;
+  color: #3e0983;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.44);
+}
+/* aqui começa o estilo do corpo da pagina */
+main {
+  width: 98.5vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+/* primeira seção da pagina */
+.secao_1 {
+  width: 50%;
+  padding: 15px;
+  margin: 5px;
+}
+.secao_1 h1 {
+  text-align: center;
+  color: black;
+}
+.secao_1 .img_banner {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.secao_1 .img_banner img {
+  width: 35%;
+}
+.secao_1 .logo_evento {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  position: relative;
+  left: -100px;
+}
+.secao_1 .logo_evento img {
+  width: 100px;
+  border-radius: 30px;
+}
+.secao_1 .titulo_btn {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 10px;
+  position: relative;
+  left: 400px;
+  top: -89px;
+}
+.secao_1 .titulo_btn h3 {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 27px;
+}
+.secao_1 .titulo_btn .btn_pegar_ingresso {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.secao_1 .titulo_btn .btn_pegar_ingresso button {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e8323f;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.39);
+  transition: all 3ms;
+}
+.secao_1 .titulo_btn .btn_pegar_ingresso button:hover {
+  border: 2px solid #3e0983;
+  color: #e8323f;
+}
+.secao_1 .titulo_btn .btn_pegar_ingresso button a {
+  text-decoration: none;
+  color: #3e0983;
+  font-size: 15px;
+}
+.secao_1 .termos {
+  width: 220px;
+}
+.secao_1 .termos label {
+  font-size: 14px;
+}
+.secao_1 .termos label a {
+  text-decoration: none;
+}
+/* segunda seção da pagina */
+.progamacao_evento {
+  width: 50%;
+  padding: 20px;
+  margin: 5px;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+}
+.progamacao_evento .boxp_programacao {
+  border: 1.5px solid #e8323f;
+  height: 100%;
+  width: 55%;
+  padding-left: 40px;
+  border-radius: 10px;
+  color: #3e0983;
+  box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.progamacao_evento .boxp_programacao h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 15px;
+  text-align: center;
+}
+.progamacao_evento .boxp_programacao p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+}
+/* rodape */
+footer {
+  border-top: #3e0983 2px solid;
+  height: 5rem;
+  position: relative;
+  bottom: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .logos {
+  width: 50%;
+}
+footer .logos img {
+  width: 126px;
+}
+footer .redes_sociais {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 900px) {
+  .menu_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    padding: 5px;
+    border-bottom: 2px solid #3e0983;
+    z-index: 1;
+  }
+  .btn_consultar_ingreso button {
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1.5px solid #e8323f;
+    background-color: #fff;
+    color: #3e0983;
+    cursor: pointer;
+  }
+  main {
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    padding: 0;
+  }
+  .secao_1,
+  .progamacao_evento {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    height: auto;
+  }
+  .secao_1 .img_banner img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .secao_1 .logo_evento img {
+    width: 120px;
+    margin: 15px 0;
+    border-radius: 15px;
+  }
+  .secao_1 .logo_evento {
+    left: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .secao_1 .titulo_btn {
+    left: 0;
+    top: 0;
+    position: static;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+  }
+  .progamacao_evento .boxp_programacao {
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    height: auto;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: static;
+    padding: 10px 0;
+  }
+  footer .logos,
+  footer .redes_sociais {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .menu_nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: static;
+  }
+  .logo_usuario,
+  .btn_consultar_ingreso {
+    position: static;
+    margin: 10px 0 0 0;
+  }
+  .dropdaw_ingresso {
+    right: 0;
+    left: 0;
+    width: 60vw;
+    height: 100px;
+    top: 60px;
+    padding: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+  .dropdaw_ingresso .btn_consultar {
+    width: 100%;
+    height: 24px;
+    margin-top: 13px;
+  }
+  .dropdaw_ingresso .btn_consultar button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid #e8323f;
+    color: #3e0983;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.44);
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: auto;
+  }
+  .menu_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    padding: 5px;
+    border-bottom: 2px solid #3e0983;
+    z-index: 1;
+  }
+  .btn_consultar_ingreso button {
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1.5px solid #e8323f;
+    background-color: #fff;
+    color: #3e0983;
+    cursor: pointer;
+  }
+  .secao_1 h1 {
+    font-size: 22px;
+  }
+  .secao_1 .titulo_btn h3 {
+    font-size: 18px;
+  }
+  .secao_1 .titulo_btn .btn_pegar_ingresso {
+    width: 100%;
+    height: 35px;
+  }
+  .secao_1 .titulo_btn .btn_pegar_ingresso button {
+    font-size: 14px;
+  }
+  .secao_1 .termos label {
+    font-size: 12px;
+  }
+  .progamacao_evento .boxp_programacao h3 {
+    font-size: 17px;
+  }
+  .progamacao_evento .boxp_programacao p,
+  .progamacao_evento .boxp_programacao ul {
+    font-size: 12px;
+  }
+  .log img {
+    width: 60px;
+  }
+  .logo_usuario img {
+    width: 24px;
+  }
+  .btn_consultar_ingreso button {
+    width: 150px;
+    font-size: 13px;
+  }
+  .dropdaw_ingresso {
+    font-size: 13px;
+    height: auto;
+    padding: 5px;
+  }
+  footer .logos img {
+    width: 80px;
+  }
+  footer .redes_sociais img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .secao_1 .img_banner img {
+    max-width: 200px;
+  }
+  .secao_1 .logo_evento img {
+    width: 80px;
+    margin: 15px 0;
+  }
+  .menu_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+    padding: 5px;
+    border-bottom: 2px solid #3e0983;
+    z-index: 1;
+  }
+  .btn_consultar_ingreso button {
+    width: 180px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1.5px solid #e8323f;
+    background-color: #fff;
+    color: #3e0983;
+    cursor: pointer;
+  }
+  .secao_1 h1 {
+    font-size: 16px;
+  }
+  .progamacao_evento .boxp_programacao {
+    padding: 20px;
+  }
+  .progamacao_evento .boxp_programacao h3 {
+    font-size: 13px;
+  }
+  .progamacao_evento .boxp_programacao p,
+  .progamacao_evento .boxp_programacao ul {
+    font-size: 10px;
+  }
+  .btn_consultar_ingreso button {
+    width: 100px;
+    font-size: 11px;
+  }
+  footer .logos img {
+    width: 60px;
+  }
+  footer .redes_sociais img {
+    width: 20px;
+  }
+}

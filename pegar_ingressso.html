@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titulo da pagina -->
+    <title>Pegar Ingresso</title>
+    <!-- icone -->
+    <link rel="shortcut icon" href="assets/img/logo para site chama.png" type="image/x-icon">
+    <!-- chamar css geral -->
+    <link rel="stylesheet" href="assets/css/estilo_geral.css">
+    <!-- chamar css da pagina de ingresso -->
+    <link rel="stylesheet" href="assets/css/estilo_pegar_ingresso.css">
+</head>
+
+<body>
+    <!-- corpo da pagina -->
+    <main>
+        <div class="form_cadastro">
+            <div class="btn_fecha">
+               <a href="principal.html"><img src="assets/img/cancel.png" alt=""></a>
+            </div>
+            <h3>Cadastro</h3>
+            <!-- formulario de cadastro -->
+            <form bindsubmit="">
+                <label for="nome">Nome <span>*</span></label>
+                <input type="text" name="nome">
+                <label for="cpf">CPF <span>*</span></label>
+                <input type="text" name="cpf">
+                <label for="email">Email <span>*</span></label>
+                <input type="email" name="email">
+                <label for="assento">Selecionar Assento <span>*</span></label>
+                <!-- botao para selecionar ingresso -->
+                <div class="btn_assento">
+                    <button>Selecionar</button>
+                </div>
+                <!-- botao para pegar o ingresso -->
+                <div class="pegar_ingresso">
+                    <button>Pegar Ingresso</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
